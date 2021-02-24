@@ -22,7 +22,7 @@
   background: var(--green);
 }
 
-.experienceBar > div > span.current-experience {
+.experienceBar > div > span.currentExperience {
   position: absolute;
   top: 12px;
   transform: translateX(-50%);
