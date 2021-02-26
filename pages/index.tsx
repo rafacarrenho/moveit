@@ -1,13 +1,13 @@
-import CompletedChallenges from "../components/CompletedChallenges";
-import Countdown from "../components/Countdown";
-import ExperienceBar from "../components/ExperienceBar";
-import Profile from "../components/Profile";
-import styles from "../styles/pages/Home.module.css";
+import CompletedChallenges from "../src/components/CompletedChallenges";
+import Countdown from "../src/components/Countdown";
+import ExperienceBar from "../src/components/ExperienceBar";
+import Profile from "../src/components/Profile";
+import styles from "../src/styles/pages/Home.module.css";
 import Head from "next/head";
-import ChallengeBox from "../components/ChallengeBox";
-import { CountdownProvider } from "../contexts/CountdownContext";
+import ChallengeBox from "../src/components/ChallengeBox";
+import { CountdownProvider } from "../src/contexts/CountdownContext";
 import { GetServerSideProps } from "next";
-import { ChallengesProvider } from "../contexts/ChallengesContext";
+import { ChallengesProvider } from "../src/contexts/ChallengesContext";
 
 interface HomeProps {
   level: number;
