@@ -40,7 +40,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder
 
 ```bash
-$ git clone https://github.com/rafacarrenho/moveit && cd move.it
+$ git clone https://github.com/rafacarrenho/moveit && cd moveit
 ```
 
 Follow the steps below
