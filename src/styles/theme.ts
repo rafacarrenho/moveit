@@ -14,6 +14,7 @@ export const lightTheme = {
     primaryDark: "#4953b8",
     bluetwitter: "#2aa9e0",
     darkMode: "#212529",
+    reverseColorText: "#666666",
   },
 };
 
@@ -30,8 +31,9 @@ export const darkTheme = {
     red: "#e83f5b",
     green: "#4cd62b",
     primary: "#21C02C",
-    primaryDark: "#4953b8",
+    primaryDark: "#14a81e",
     bluetwitter: "#2aa9e0",
     darkMode: "#fff",
+    reverseColorText: "#212529",
   },
 };

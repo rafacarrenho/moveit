@@ -62,7 +62,7 @@ export const CountdownButton = styled.button`
 
   &.active {
     background-color: ${({ theme }) => theme.colors.white};
-    color: ${({ theme }) => theme.colors.title};
+    color: ${({ theme }) => theme.colors.reverseColorText};
   }
 
   &.active:not(:disabled):hover {
