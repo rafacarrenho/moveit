@@ -12,9 +12,8 @@ const GlobalStyles = createGlobalStyle`
       height: 100%;
     }
 
-    body {
-      background: ${({ theme }) => theme.colors.background};
-      color: ${({ theme }) => theme.colors.text};
+    body{
+      margin: 0 !important
     }
 
     @media screen and (max-width: 1080px) {
