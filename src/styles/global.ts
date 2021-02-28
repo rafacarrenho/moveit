@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -35,6 +35,12 @@ const GlobalStyles = createGlobalStyle`
       font: 400 1rem "Inter", sans-serif;
     }
 
+    ${({ theme }) => css`
+      body {
+        background-color: ${theme.colors.background};
+        color: ${theme.colors.text};
+      }
+    `}
     button {
       cursor: pointer;
     }
