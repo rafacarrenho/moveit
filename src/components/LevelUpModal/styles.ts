@@ -32,7 +32,7 @@ export const Container = styled.div`
 
   strong {
     font-size: 2.25rem;
-    color: ${({ theme }) => theme.colors.title};
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   p {

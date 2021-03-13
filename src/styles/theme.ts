@@ -48,7 +48,7 @@ export const darkTheme = {
     background: MyPallet.blackDark,
     backgroundSecondary: MyPallet.blackLight,
     grayline: MyPallet.greyLight,
-    text: MyPallet.grey,
+    text: MyPallet.greyDark,
     texthighlight: MyPallet.primaryDark,
     title: MyPallet.white,
     red: MyPallet.red,

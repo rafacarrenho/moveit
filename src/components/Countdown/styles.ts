@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const CountdownContainer = styled.div`
   display: flex;
@@ -37,43 +37,45 @@ export const CountdownContainer = styled.div`
 `;
 
 export const CountdownButton = styled.button`
-  width: 100%;
-  height: 5rem;
-  margin-top: 2rem;
-  @media screen and (max-width: 930px) {
-    margin-bottom: 2rem;
-  }
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  border: 0;
-  border-radius: 5px;
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.white};
-  font-weight: 600;
-  font-size: 1.25rem;
-  transition: 0.3s ease;
-  border-bottom: 2px solid transparent;
+  ${({ theme }) => css`
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    @media screen and (max-width: 930px) {
+      margin-bottom: 2rem;
+    }
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 5px;
+    background-color: ${theme.colors.primary};
+    color: ${theme.colors.white};
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: 0.3s ease;
+    border-bottom: 2px solid transparent;
 
-  &:not(:disabled):hover {
-    background-color: ${({ theme }) => theme.colors.primaryDark};
-  }
+    &:not(:disabled):hover {
+      background-color: ${theme.colors.primaryDark};
+    }
 
-  &.active {
-    background-color: ${({ theme }) => theme.colors.white};
-    color: ${({ theme }) => theme.colors.reverseColorText};
-  }
+    &.active {
+      background-color: ${theme.colors.white};
+      color: ${theme.colors.text};
+    }
 
-  &.active:not(:disabled):hover {
-    background-color: ${({ theme }) => theme.colors.red};
-    color: ${({ theme }) => theme.colors.white};
-  }
+    &.active:not(:disabled):hover {
+      background-color: ${theme.colors.red};
+      color: ${theme.colors.white};
+    }
 
-  &:disabled {
-    background-color: ${({ theme }) => theme.colors.white};
-    color: ${({ theme }) => theme.colors.text};
-    cursor: not-allowed;
-    border-bottom: 0.4rem solid ${({ theme }) => theme.colors.green};
-  }
+    &:disabled {
+      background-color: ${theme.colors.white};
+      color: ${theme.colors.text};
+      cursor: not-allowed;
+      border-bottom: 0.4rem solid ${theme.colors.green};
+    }
+  `}
 `;
