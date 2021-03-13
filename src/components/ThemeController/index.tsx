@@ -5,7 +5,7 @@ import { CgDarkMode } from "react-icons/cg";
 const ThemeController = () => {
   return (
     <S.Wrapper>
-      <CgDarkMode title="Switch dark mode" />
+      <CgDarkMode title="Switch dark mode" aria-label="Switch dark mode" />
     </S.Wrapper>
   );
 };

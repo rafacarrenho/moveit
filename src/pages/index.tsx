@@ -8,6 +8,7 @@ import ChallengeBox from "../components/ChallengeBox";
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { GetServerSideProps } from "next";
 import { ChallengesProvider } from "../contexts/ChallengesContext";
+import ChooseChallengeTime from "../components/ChooseChallengeTime";
 
 interface HomeProps {
   level: number;
@@ -30,6 +31,7 @@ export default function Home(props: HomeProps) {
           <section>
             <div>
               <Profile />
+              <ChooseChallengeTime />
               <CompletedChallenges />
               <Countdown />
             </div>
